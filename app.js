@@ -42,7 +42,7 @@ var potte = mongoose.model("logininfo", contactshema);
 var startups = mongoose.model("startupinfo", startupschema);
 var investors = mongoose.model("investorinfo", investorschema);
 
-app.listen(80, () => {
+app.listen(process.env.PORT || 80, () => {
     console.log("Application started and Listening on port 80");
 });
 app.get('/register', (req, res) => {
