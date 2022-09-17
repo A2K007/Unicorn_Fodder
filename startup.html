@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="startup1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: white">Our Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" style="color: white">Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html" style="color: white"
+                >Register</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" style="color: white"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container rounded bg-white mt-5 mb-5">
+        <form action="/startup" method="post">
+            <div class="row">
+                <div class="col-md-3 border-right">
+                    <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Startup</span>
+                    </div>
+                </div>
+                <div class="col-md-5 border-right">
+                    <div class="p-3 py-5">
+    
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="text-right">Profile Settings</h4>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-6"><label name="email" class="labels">EMAILID </label><input type="text" name="email" class="form-control" placeholder="Enter your EmailID" value=""></div>
+                            <div class="col-md-6"><label name="cinnumber" class="labels">CIN NUMBER </label><input type="text" name="cinnumber" class="form-control" placeholder="Enter CIN number" value=""></div>
+                            <div class="col-md-6"><label class="labels">COMPANY NAME </label><input type="text" name="companyname" class="form-control" value="" placeholder="Enter Company name"></div>
+                            <div class="col-md-6"><label class="labels">DOMAIN NAME  </label><input type="text" name="domainname" class="form-control" value="" placeholder="Enter Domain's Name"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12"><label class="labels">FOUNDER'S NAME </label><input type="text" name="namefounder" class="form-control" placeholder="Enter your  Name" value=""></div>
+                            <div class="col-md-12"><label class="labels">QUALIFICATION </label><input type="text" name="qualification" class="form-control" placeholder="Enter your Qualification" value=""></div>
+                            <div class="col-md-12"><label class="labels">TOP-LINE AND BOTTOM-LINE GROWTHS  </label><input type="text" name="reveue" class="form-control" placeholder="Enter current networth of the company (in dollars)" value=""></div>
+                            <div class="col-md-12"><label class="labels">PROFIT MARGIN </label><input type="text" class="form-control" name="profitmargin" placeholder="provide the company names the investor has previously invested in" value=""></div>
+                            <div class="col-md-12"><label class="labels">DOMAINS OF INTEREST</label>
+                                <select id="dropdown" name="designation" class="form-control" required>
+                                <option disabled selected values >select your domains of interest </option>
+                                <option value=" agriculture">AGRICULTURE</option>
+                                <option value=" textiles">TEXTILES</option>
+                                   <option value="tech">TECH</option>
+                                 <option value="fashion">FASHION</option>
+                                <option value="hardware">HARDWARE</option>
+                                <option value="pharma">PHARMA</option>
+                                <option value="lifestyle">LIFESTYLE</option>
+                                <option value="hospitality">HOSPITALITY</option>
+                                <option value="HORECA">HORECA</option>
+                                <option value="manufacturing">MANUFACTURING</option>
+                                <option value="foodservices">FOOD SERVICES</option>
+                                <option value="education">EDUCATION</option>
+                                <option value="logistics">LOGISTICS AND SUPPLY CHAIN MANAGEMENT</option>
+                              </select>
+                            </div>
+                            <div class="col-md-12"><label class="labels">BUSINESS MODEL</label>
+                                <label>
+                                <input name="businessmodel" name="businessmodel" value="model" type="checkbox" class="input-checkbox" >B2B </label>
+    
+                                <label>
+                                 <input name="businessmodel" name="businessmodel" value="model" type="checkbox" class="input-checkbox" >B2C </label>
+    
+                            </div>
+                            <div class="col-md-12"><label class="labels">PITCH DECK </label><input type="text" name="pitchdeck" class="form-control" placeholder="Provide the link of your business model presentation" value=""></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6"><label class="labels">CURRENTLY INVOLVED INVESTORS</label>
+                                <label class="label">
+                                <input name="user-recommend" value="startup" type="radio" id="gender" class="input-radio" checked>YES</label>
+                                <lable class="label">
+                                    <input name="user-recommend" value="startup" type="radio" id="gender" class="input-radio" checked>NO </label>
+                            </div>
+    
+                        </div>
+                        <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="submit">Save Profile</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 py-5">
+                        <div class="d-flex justify-content-between align-items-center experience"><span>Edit Experience</span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Experience</span></div><br>
+                        <div class="col-md-12"><label class="labels">Previous Experience </label><input type="text" class="form-control" placeholder="experience" value=""></div> <br>
+                        <div class="col-md-12"><label class="labels">Additional Details</label><input type="text" class="form-control" placeholder="additional details" value=""></div>
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

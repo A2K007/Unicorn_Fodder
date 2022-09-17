@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.welcome #login {
+    font-size: 20px;
+}
+
+.container-fluid {
+    background-image: url(Untitled-1-05\ \(1\).png);
+    background-size: contain;
+    width: 50%;
+    height: 100vh;
+    margin-left: 375px;
+    background-repeat: no-repeat;
+    margin-top: -40px;
+}
