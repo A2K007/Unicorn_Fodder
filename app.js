@@ -5,7 +5,7 @@ const path = require('path');
 const mongoose = require("mongoose");
 const { connect } = require("http");
 const { brotliDecompressSync } = require("zlib");
-mongoose.connect('mongodb+srv://avishkar07:avishkar07@cluster0.rarutio.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://avishkar07:Avishkar@picsoreel2k23.dmgzdik.mongodb.net/Voting?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 var db = mongoose.connection;
 db.once('open', function() {
     console.log("Hello");
